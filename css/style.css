@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.contenido-logo {
+    /* border: 1px solid red; */
+    width: 30vw;
+    height: 65%;
+    margin: 4px auto;
+    background-image: url(../img/logo2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* lista de menu */
+.contenido-list-menu {
+    list-style: none;
+    color: white;
+    border: 2px solid transparent;
+    padding: .5rem;
+}
+
+.contenido-link-menu{
+    border: 1px solid rgb(148, 190, 201);
+    margin: 5px;
+    border-radius: 50px;
+    padding: 5px;
+
+}
+
+/* contenido padre cabecera */
+.contenido-padre{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding-bottom: 20;
+    border: 2px solid transparent;
+
+}
+
+/* Titulo */
+
+
+
+h1{
+    color: blueviolet;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    text-align: center;
+    margin: 30px auto;
+    border: 2px solid transparent;
+    padding: 30px;
+}
+
+/* seccion PROYECTOS */
+
+.cont-sec-proy{
+    /* background-color: white; */
+    height: auto;
+    border: 2px solid white;
+    padding: 1px;
+    margin: 5px;
+    
+}
+
+.contenido-proy{
+    background-color: rgb(15, 15, 15);
+    border: 2px solid black;
+    height: auto;
+    padding: 10px;
+    
+}
+
+.cont-tit3{
+    color: white;
+    border: 1px solid transparent;
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.contenido-img{
+    width: 80%;;
+    margin: auto;
+    height: auto;
+    border: 2px solid white;
+    padding: 10px;
+}
+.contenido-img img{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.contenido-desc{
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    margin: 0 30px;
+    padding: 10px;
+}
+
+/* FIN seccion PROYECTOS */
