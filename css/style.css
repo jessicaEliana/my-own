@@ -13,6 +13,8 @@
     background-image: url(../img/logo2.png);
     background-size: cover;
     background-position: center;
+    width: 50%; /* Reducir el ancho del logo en dispositivos pequeños */
+    height: auto; /* Permitir que la altura del logo se ajuste automáticamente */
 }
 
 
@@ -23,6 +25,9 @@
     color: white;
     border: 2px solid transparent;
     padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar los elementos de la lista de menú en dispositivos pequeños */
 }
 
 .contenido-link-menu{
@@ -30,6 +35,7 @@
     margin: 5px;
     border-radius: 50px;
     padding: 5px;
+    
 
 }
 
@@ -40,6 +46,8 @@
     margin: 10px;
     padding-bottom: 20;
     border: 2px solid transparent;
+    flex-direction: column; /* Cambiar a una disposición de columna en dispositivos pequeños */
+    align-items: center; /* Centrar los elementos en dispositivos pequeños */
 
 }
 
@@ -53,9 +61,11 @@ h1{
     font-optical-sizing: auto;
     font-style: italic;
     text-align: center;
-    margin: 30px auto;
+    
     border: 2px solid transparent;
-    padding: 30px;
+    
+    margin: 20px auto; /* Ajustar el margen del título en dispositivos pequeños */
+    padding: 20px; /* Ajustar el relleno del título en dispositivos pequeños */
 }
 
 /* seccion PROYECTOS */
@@ -63,17 +73,20 @@ h1{
 .cont-sec-proy{
     /* background-color: white; */
     height: auto;
-    border: 2px solid white;
-    padding: 1px;
+    border: 2px solid transparent;
     margin: 5px;
+    padding: 10px; /* Ajustar el relleno de la sección de proyectos en dispositivos pequeños */
+    
+
     
 }
 
 .contenido-proy{
     background-color: rgb(15, 15, 15);
-    border: 2px solid black;
+    border: 2px solid transparent;
     height: auto;
     padding: 10px;
+    margin-bottom: 20px; /* Ajustar el margen inferior de los proyectos en dispositivos pequeños */
     
 }
 
@@ -108,3 +121,78 @@ h1{
 }
 
 /* FIN seccion PROYECTOS */
+
+/* FOOTER */
+.contenido-logo2{
+    margin: 5px;
+    float: right;
+}
+
+/* Estilos para tablets (de 601px a 1024px de ancho) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .contenido-logo {
+        border: 1px solid transparent;
+        width: 200px; /* Reducir aún más el ancho del logo en tablets */
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Reducir el tamaño del título en tablets */
+    }
+
+    .contenido-proy {
+        width: 60%; /* Reducir el ancho de los proyectos en tablets */
+        margin: auto;
+    }
+
+    .contenido-desc {
+        margin: 0; /* Eliminar el margen lateral de la descripción en tablets */
+    }
+}
+
+/* Estilos para pantallas de escritorio (a partir de 1025px de ancho) */
+@media only screen and (min-width: 1025px) {
+    .contenido-logo {
+        width: 300px;
+        height: 300px; /* Restaurar el ancho del logo para pantallas de escritorio */
+    }
+
+    h1{
+        font-size: 3rem;
+        padding: 50px;
+    }
+
+
+
+    .cont-sec-proy {
+        display: flex; /* Cambiar la disposición de la sección de proyectos a flexbox para pantallas de escritorio */
+        justify-content: space-between; /* Distribuir los proyectos horizontalmente en pantallas de escritorio */
+    }
+
+    .cont-tit3 {
+        
+        font-size: 2rem;
+        padding: 20px 0;
+        margin-bottom: 20px
+    }
+
+    .contenido-proy {
+        
+        padding: 10px;
+        width: 60%; /* Ajustar el ancho de los proyectos en pantallas de escritorio */
+    }
+
+    .contenido-desc {
+        
+        margin: 30px; /* Ajustar el margen lateral de la descripción en pantallas de escritorio */
+    }
+
+
+    
+
+
+
+
+}
+
