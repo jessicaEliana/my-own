@@ -39,6 +39,11 @@
 
 }
 
+.contenido-anchor {
+    text-decoration: none;
+    color: white;
+}
+
 /* contenido padre cabecera */
 .contenido-padre{
     display: flex;
